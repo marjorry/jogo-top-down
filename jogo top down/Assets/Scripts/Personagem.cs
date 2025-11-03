@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Personagem : MonoBehaviour
+public partial class Personagem : MonoBehaviour
 {
     [SerializeField]
     private int vidas;
