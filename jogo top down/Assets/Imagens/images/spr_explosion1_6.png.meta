@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: bb73a438840abbe448b4c80116d36585
+guid: 39c8bc111bcec974088284bbd272a381
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2424602536942757335
-    second: panel_grey_bolts_green_0
+      213: 375139511697561768
+    second: spr_explosion1_6_0
+  - first:
+      213: -5252849180752721185
+    second: spr_explosion1_6_1
+  - first:
+      213: 6301888179125751390
+    second: spr_explosion1_6_2
+  - first:
+      213: -1684219484672059004
+    second: spr_explosion1_6_3
+  - first:
+      213: 4293385920375420887
+    second: spr_explosion1_6_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +138,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panel_grey_bolts_green_0
+      name: spr_explosion1_6_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 26
+        y: 161
+        width: 38
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 37, y: 36, z: 36, w: 36}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92a1408b6d41a5ed0800000000000000
-      internalID: -2424602536942757335
+      spriteID: 8a852f7f563c43500800000000000000
+      internalID: 375139511697561768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_explosion1_6_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 148
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda488a30812a17b0800000000000000
+      internalID: -5252849180752721185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_explosion1_6_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 107
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e060bf8edc47750800000000000000
+      internalID: 6301888179125751390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_explosion1_6_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 22
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48994545d4370a8e0800000000000000
+      internalID: -1684219484672059004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_explosion1_6_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7f3ab4fbb259b30800000000000000
+      internalID: 4293385920375420887
       vertices: []
       indices: 
       edges: []
@@ -151,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ec3e87c6acbd6bd43a972a90e669c449
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +260,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      panel_grey_bolts_green_0: -2424602536942757335
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

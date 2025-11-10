@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bb73a438840abbe448b4c80116d36585
+guid: 2be7ee64b4e732145a137ac2d612617d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2424602536942757335
-    second: panel_grey_bolts_green_0
+      213: -8141342158164960786
+    second: spr_health_0_0
+  - first:
+      213: -8599703594497580938
+    second: spr_health_0_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panel_grey_bolts_green_0
+      name: spr_health_0_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 128
-        height: 128
+        width: 26
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 37, y: 36, z: 36, w: 36}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92a1408b6d41a5ed0800000000000000
-      internalID: -2424602536942757335
+      spriteID: ee95aab1174240f80800000000000000
+      internalID: -8141342158164960786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_health_0_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 6
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670625cd427b7a880800000000000000
+      internalID: -8599703594497580938
       vertices: []
       indices: 
       edges: []
@@ -151,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ec3e87c6acbd6bd43a972a90e669c449
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      panel_grey_bolts_green_0: -2424602536942757335
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

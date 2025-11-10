@@ -340,6 +340,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2061335519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4634652378915958989, guid: ebc5dafc563ce11488529d2d3ea41a4c, type: 3}
+  m_PrefabInstance: {fileID: 5446409053010739439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2061335522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061335519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cc619bb0ecf6f4292181904b05a5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saidaDoTiro: {fileID: 0}
+  bala: {fileID: 0}
+  intervaloDoDisparo: 0.2
+  cursor: {fileID: 0}
 --- !u!1001 &2511527191809478737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -391,6 +412,10 @@ PrefabInstance:
     - target: {fileID: 5029510439059546808, guid: b3406320d7645c142a4b4a57557607ee, type: 3}
       propertyPath: m_Name
       value: Mortero
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029510439059546808, guid: b3406320d7645c142a4b4a57557607ee, type: 3}
+      propertyPath: m_TagString
+      value: Bala
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -460,7 +485,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4634652378915958989, guid: ebc5dafc563ce11488529d2d3ea41a4c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2061335522}
   m_SourcePrefab: {fileID: 100100000, guid: ebc5dafc563ce11488529d2d3ea41a4c, type: 3}
 --- !u!1001 &7722233162158416010
 PrefabInstance:
