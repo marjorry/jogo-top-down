@@ -1,34 +1,67 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Personagem1
 {
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+    
+    public Transform arma;
+
+    private bool amdando;
     
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
-
-   
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        amdando = false;
+        
+        //direita
+        if (arma.rotation.eulerAngles.z > -90 
+            && arma.rotation.eulerAngles.z < 90)
         {
-            
+            spriteRenderer.flipX = false;
         }
         
-        if(Input.GetKey(KeyCode.S))
+        //esquerda
+        if (arma.rotation.eulerAngles.z > 90 
+            && arma.rotation.eulerAngles.z < 270)
         {
-            
+            spriteRenderer.flipX = true;
+        }
+
+
+
+        //movimento para a esquerda
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.position -= new Vector3(getVelocidade() * Time.deltaTime, 0, 0);  
+            amdando = true;
+        }
+
+        //movimento para a direita
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += new Vector3(getVelocidade() * Time.deltaTime, 0, 0);
+            amdando = true;
         }
         
-        if(Input.GetKey(KeyCode.D))
+        //movimento para a Cima
+        if (Input.GetKey(KeyCode.W))
         {
-            
+            transform.position += new Vector3(0, getVelocidade() * Time.deltaTime, 0); 
+            amdando = true;
         }
         
-        if(Input.GetKey(KeyCode.A))
+        //movimento para a Cima
+        if (Input.GetKey(KeyCode.S))
         {
-            
+            transform.position -= new Vector3(0, getVelocidade() * Time.deltaTime, 0);  
+            amdando = true;
         }
+        
+        animator.SetBool("Andando", amdando);
     }
 }
