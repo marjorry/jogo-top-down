@@ -17,7 +17,7 @@ public class Arma : MonoBehaviour
    
     void Start()
     {
-        camera = GetComponent<Camera>();
+        camera = Camera.main;
      spriteRenderer = GetComponent<SpriteRenderer>();
     
     }
@@ -52,7 +52,7 @@ public class Arma : MonoBehaviour
        
       Debug.DrawLine(transform.position, mouse, Color.red);
 
-      if (tempoDeDisparo <= 0 && Input.GetKeyDown(KeyCode.Space))
+      if (tempoDeDisparo <= 0 && Input.GetKeyDown(KeyCode.Mouse0))
       {
           Debug.Log("Bala disparada");
           
