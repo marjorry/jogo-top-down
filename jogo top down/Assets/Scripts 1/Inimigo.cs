@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Inimigo : Personagem1
+public class Inimigo : Personagem
 {
     [SerializeField] private int dano = 1;
     
@@ -92,8 +92,8 @@ public class Inimigo : Personagem1
         if (collision.gameObject.CompareTag("Player") && getVida() > 0)
         {
             // Causa dano ao Player
-            int novaVida = collision.gameObject.GetComponent<Personagem1>().getVida() - getDano();
-            collision.gameObject.GetComponent<Personagem1>(). setVida(novaVida);
+            int novaVida = collision.gameObject.GetComponent<Personagem>().getVida() - getDano();
+            collision.gameObject.GetComponent<Personagem>(). setVida(novaVida);
 
             //collision.gameObject.GetComponent<Personagem>().recebeDano(getDano());
             

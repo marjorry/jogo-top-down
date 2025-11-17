@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Personagem1 : MonoBehaviour
+public class Personagem : MonoBehaviour
 {
     [SerializeField] private float velocidade = 5;
     [SerializeField] private int vida = 10;
