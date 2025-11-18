@@ -39,6 +39,7 @@ public class Inimigo : Personagem
         raioDeVisao = _visaoCollider2D.radius;
 
     }
+
     void Update()
     {
         andando = false;
@@ -68,15 +69,37 @@ public class Inimigo : Personagem
 
                 andando = true;
             }
-        }
 
-        if (getVida() <= 0)
-        {
-            animator.SetTrigger("Morte");
         }
         
-        animator.SetBool("Andando",andando);
+        if (getVida() <= 0)
+        {
+            animator.SetTrigger( name:"Morte");
+        }
 
+        animator.SetBool(name:"Andando", andando);
+    }
+
+    public void desative()
+    {
+        gameObject.SetActive(false);
+    }
+    
+    
+   private void onCollisionEnter2D(Collision2D collision)
+   {
+       if (collision.gameObject.CompareTag("Player") && getVida()>0)     
+       {
+        //causa dano no player
+        int novaVida =collision.gameObject.GetComponent<Personagem>().getVida();
+        collision.gameObject.GetComponent<Personagem>().setVida(novaVida);
+        
+        // zera a vida do Inimigo
+        setVida(0);
+        
+       }
+    
+    
     }
 
     public void desativa()

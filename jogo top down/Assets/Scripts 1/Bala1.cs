@@ -49,9 +49,11 @@ public class Bala1 : MonoBehaviour
         {
             int novaVida = colisao.gameObject.GetComponent<Personagem>().getVida()- getDano();
             colisao.gameObject.GetComponent<Personagem>().setVida(novaVida);
+            
+            Destroy(this.gameObject);
         }
         
-        Destroy(this.gameObject);
+        
         
     }
     
