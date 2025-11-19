@@ -80,6 +80,9 @@ public class Inimigo : Personagem
         animator.SetBool(name:"Andando", andando);
     }
 
+    
+    
+    
     public void desative()
     {
         gameObject.SetActive(false);
@@ -121,6 +124,7 @@ public class Inimigo : Personagem
             //collision.gameObject.GetComponent<Personagem>().recebeDano(getDano());
             
             //sera a vida do inimigo
+            setVida(0);
           
         }
     }
