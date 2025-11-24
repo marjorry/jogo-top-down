@@ -119,8 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!1 &347886655
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,10 +317,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,7 +1324,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5570392713809615983, guid: c8b1e2a7311ab5444b99dfcfd625cbd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 356780920}
   m_SourcePrefab: {fileID: 100100000, guid: c8b1e2a7311ab5444b99dfcfd625cbd8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
