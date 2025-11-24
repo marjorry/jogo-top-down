@@ -1,38 +1,33 @@
 using UnityEngine;
 using UnityEngine.UI;
-
 public class BarraDeVida : MonoBehaviour
 {
-    public Slider sliderVidasRestantes;
+    public Slider sliderVidasReestantes;
+    
     public Personagem personagem;
-
-    [SerializeField]
-    private int vidasRestantes = 0;
-   
-   
+    [SerializeField] private int vidasRestantes = 0;
     void Start()
     {
-        if (personagem == null && sliderVidasRestantes != null)
+        if (personagem != null & sliderVidasReestantes != null)
         {
-            sliderVidasRestantes.minValue = 0;
-            sliderVidasRestantes.maxValue = personagem.getVida();
-        }
-        
+            sliderVidasReestantes.minValue = 0;
+            sliderVidasReestantes.maxValue = personagem.getVida();
+        } 
     }
 
-    
+
     void Update()
     {
-        if (sliderVidasRestantes != null)
+        if (sliderVidasReestantes != null)
         {
-            vidasRestantes =  personagem.getVida();
-            sliderVidasRestantes.value = vidasRestantes;
             
+            vidasRestantes = personagem.getVida();
+            sliderVidasReestantes.value = vidasRestantes; 
         }
-            
-        
-        
-        
+    
+    
+    
+    
         
     }
 }
