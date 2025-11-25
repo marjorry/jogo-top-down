@@ -11,6 +11,7 @@ public class Inimigo : Personagem
     
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    public AudioSource AudioSource;
 
     private bool andando = false;
     
@@ -37,6 +38,12 @@ public class Inimigo : Personagem
         }
         
         raioDeVisao = _visaoCollider2D.radius;
+        
+        AudioSource = GetComponent<AudioSource>();
+        
+        
+        
+        
 
     }
 
@@ -87,7 +94,11 @@ public class Inimigo : Personagem
     {
         gameObject.SetActive(false);
     }
-    
+
+    public void playAudio()
+    {
+        AudioSource.Play();
+    }
     
    private void onCollisionEnter2D(Collision2D collision)
    {
