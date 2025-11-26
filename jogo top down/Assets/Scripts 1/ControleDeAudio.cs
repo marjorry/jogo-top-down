@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class ControleDeAudio : MonoBehaviour
 {
 
+    public AudioMixer mixer;
+    
     public int volume;
     public int volumeEfeitosSonoros;
     public bool musica;
@@ -41,7 +43,11 @@ public class ControleDeAudio : MonoBehaviour
             textoMusica.text = "Desligado";
             textoMusica.color = Color.red;
         }
-        
-        
+
+        if (volume <= -20)
+        {
+            volume = 80;
+        }
+        mixer.SetFloat("Master", volume);
     }
 }

@@ -27,7 +27,9 @@ public class CriarInimigos : MonoBehaviour
             GameObject inm = Instantiate(inimigos[Random.Range(0, inimigos.Length)],
             new Vector3( ponto.position.x, ponto.position.y, ponto.position.z),
             ponto.rotation) as GameObject;
-            
+
+            conometroDoInimigo = 0;
+
         }
     }
 }
