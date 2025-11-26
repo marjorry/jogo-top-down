@@ -4,67 +4,52 @@ public class Player : Personagem
 {
     private SpriteRenderer spriteRenderer;
     private Animator animator;
-    
+
     public Transform arma;
 
     private bool andando = false;
-    
+
     void Start()
     {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
-
-    
 
     void Update()
     {
         andando = false;
 
-        if (arma.rotation.eulerAngles.z > +90 && arma.rotation.eulerAngles.z < 90)
-        {
+        float z = arma.rotation.eulerAngles.z;
+
+        if (z < 90 || z > 270)
             spriteRenderer.flipX = false;
-        }
-            
-        if (arma.rotation.eulerAngles.z > 90 && arma.rotation.eulerAngles.z < 270)
-        {
+        else
             spriteRenderer.flipX = true;
-        } 
-            
+
         if (Input.GetKey(KeyCode.W))
         {
-           gameObject.transform.position += new Vector3(0, getVelocidade() * Time.deltaTime, 0);
-           andando = true;
+            transform.position += new Vector3(0, getVelocidade() * Time.deltaTime, 0);
+            andando = true;
         }
-        
+
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.position -= new Vector3(0, getVelocidade() * Time.deltaTime, 0);
+            transform.position -= new Vector3(0, getVelocidade() * Time.deltaTime, 0);
             andando = true;
         }
-        
+
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.position += new Vector3(getVelocidade() * Time.deltaTime, 0, 0 );
+            transform.position += new Vector3(getVelocidade() * Time.deltaTime, 0, 0);
             andando = true;
         }
-        
+
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.position -= new Vector3(getVelocidade() * Time.deltaTime, 0, 0 );
+            transform.position -= new Vector3(getVelocidade() * Time.deltaTime, 0, 0);
             andando = true;
         }
-        
+
         animator.SetBool("andando", andando);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
 }
